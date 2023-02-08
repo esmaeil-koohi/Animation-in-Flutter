@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class AnimationOpacity extends StatefulWidget {
-  const AnimationOpacity({Key? key}) : super(key: key);
+class AnimOpacity extends StatefulWidget {
+  const AnimOpacity({Key? key}) : super(key: key);
 
   @override
-  State<AnimationOpacity> createState() => _AnimationOpacityState();
+  State<AnimOpacity> createState() => _AnimOpacityState();
 }
 
-class _AnimationOpacityState extends State<AnimationOpacity> {
+class _AnimOpacityState extends State<AnimOpacity> {
   double opacity = 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: Padding(
-        padding: EdgeInsets.all(24),
+        padding: const EdgeInsets.all(24),
         child: ElevatedButton(
           onPressed: () {
             setState(() {

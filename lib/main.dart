@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'anim_opacity.dart';
+import 'anim_container.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const AnimationOpacity(),
+      // home: const AnimationOpacity(),
+      home: const AnimContainer(),
     );
   }
 }
