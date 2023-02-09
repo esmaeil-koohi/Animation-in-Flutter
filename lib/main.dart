@@ -1,4 +1,5 @@
 
+import 'package:animation/anim_tween.dart';
 import 'package:animation/animated_controller.dart';
 import 'package:animation/animated_position.dart';
 import 'package:animation/animated_rotation.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const AnimController(),
+      home: const TweenAnim(),
     );
   }
 }
