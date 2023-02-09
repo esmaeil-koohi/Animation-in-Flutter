@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AnimContainer extends StatefulWidget {
@@ -21,24 +22,24 @@ class _AnimContainerState extends State<AnimContainer> {
         child: ElevatedButton(
           onPressed: () {
             setState(() {
-            color = Colors.green;
-            borderRadius = 200;
-            height = 200;
-            width = 200;
+              color = Colors.green;
+              borderRadius = 200;
+              height = 200;
+              width = 200;
             });
           },
           child: const Text('Run'),
         ),
       ),
       body: Center(
-            child: AnimatedContainer(
-              width: width,
-              height: height,
-              decoration: BoxDecoration(
-                color: color,
-              borderRadius: BorderRadius.circular(borderRadius),
-              ), duration: const Duration(seconds: 1),
-            ),
+        child: AnimatedContainer(
+          width: width,
+          height: height,
+          decoration: BoxDecoration(
+            // color: color,
+            borderRadius: BorderRadius.circular(borderRadius),
+          ), duration: const Duration(seconds: 1),
+        ),
       ),
     );
   }

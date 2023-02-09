@@ -1,6 +1,9 @@
 
+import 'package:animation/animated_controller.dart';
+import 'package:animation/animated_position.dart';
+import 'package:animation/animated_rotation.dart';
+import 'package:animation/animated_scale.dart';
 import 'package:flutter/material.dart';
-import 'anim_container.dart';
 
 
 
@@ -20,8 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: const AnimationOpacity(),
-      home: const AnimContainer(),
+      home: const AnimController(),
     );
   }
 }
